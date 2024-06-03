@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Decontaminate, the video game</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="style.css" rel="stylesheet">
+		<script>
+			// fuck it archaic javascript let'sa go
+			function hideError(){
+				document.getElementById('error').remove();
+			}
+			function showError(src){
+				const element = document.createElement('img');
+				element.id = 'error'
+				element.src = "img/error/"+src+".png";
+				document.body.appendChild(element);
+				element.onclick = hideError
+
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+	
+			<nav>
+				<a href="#home">home</a>
+				<a href="#customer">customer</a>	
+				<a href="#forum">forum</a>
+				<a href="#career">career</a>
+				<a href="#faq">faq</a>
+			</nav>
+		</header>
+		<main>
+			<div class='logo'>
+				<img src="img/90logo.png">
+				<img width=350px src="img/cleanse.gif">
+			</div>
+			<hr>
+			<h2 id='customer'>For Our Customer</h2>
+			<h3>Don't Share Your Home with Unwanted Guests!</h3>
+			<h3>Tired of insects taking over your living space?  Having a pest problem can be stressful and even dangerous. Reclaim your peace of mind with our effective and eco-friendly pest control solutions.</h3>
+			<h3>Here's what you get:</h3>
+			<h3><ul>
+
+					<li>Fast and reliable service: We'll get rid of your unwanted guests quickly so you can get back to enjoying your home.</li>
+					<li>Targeted treatments: We use the latest methods to eliminate pests without harming your family or pets.</li>
+					<li>Guaranteed results: We stand behind our work, so you can be confident your pest problem is solved.</li>
+				</ul></h3><h2>Don't wait! Schedule your free inspection today!</h2>
+			<h2>Call us now at 1-800-DECON or click the button below!</h2>
+			<button class='schedule' onclick='showError("connection")'>Schedule your inspection now!</button>
+			<hr>
+			<h2 id='forum'>Pest infestation forum</h2>	
+			<h3> Don't let pests take over your home any longer! Join the Forum Now! Get Support & Fight Back Against Pests! 
+		<a href="https://discord.gg/M5Wnd8DTnY"><button class='discord'>Join discord community </button></a>
+			</h3>
+			<hr>
+			<h2 id='career'>Start a career with us</h2>
+			<h3>Be your own boss and set your own schedule, but be prepared for long hours and unpredictable work.  The training might not be enough to deal with the vermin you'll encounter, and the pay might not be competitive enough after you factor in gas, wear and tear on your equipment, and the inevitable customer who tries to stiff you.  If you're looking for a way to make some extra cash while battling insects and disappointment, this might be the chance for you!</h3>
+			<a href="https://cyboorg.itch.io/decontaminate"><button class='download'>DOWNLOAD decontaminate.exe </button></a>
+			<hr>
+			
+			<h2 id='faq'>Frequently asked questions</h2>
+			<h3>
+				<ul>
+					<details>
+							<summary>What's the cost of a decontamination?</summary>
+							<p>Depending on the entity that is haunting you the costs may vary. But the cost is oscillating between 500$/2000$</p>
+						</details>
+						<details>
+						<summary>How long does a typical treatment take?</summary>
+						<p>Depending on the size of your home, type of pest and severity of infestation. It may take from a day to a few weeks</p>					</details>
+					
+				</ul>
+			</h3>
+			<hr>
+			</main>
+
+
+
+		<footer>
+			2024 &copy; Cyborg @0x45r
+		</footer>
+	</body>
+</html>
